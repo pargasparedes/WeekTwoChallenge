@@ -14,12 +14,7 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     padding: 20px;
-    /* background-color: aquamarine; */
 }
-
-/* header h1 {
-    font-family: 'Monoton';font-size: 50px;
-} */
 
 .neonText {
     color: #F7E9FF;
@@ -103,7 +98,6 @@ nav ul {
 
 ul li {
     margin-left: 10px;
-    border-bottom: 2px solid;
     font-size: 25px;
 }
 
@@ -137,3 +131,24 @@ article div p {
 .container {
     padding-top: 200px;
 }
+
+nav li {
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.5em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+  }
+
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
