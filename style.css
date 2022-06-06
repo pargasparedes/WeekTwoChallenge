@@ -1,14 +1,22 @@
+/* Setting box-model for website */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Making website scroll smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Setting background image */
 body {
     background-image: url('187161.jpg');
     background-size: 100% auto;
 }
 
+/* Styling header - flex */
 header {
     display: flex;
     justify-content: space-between;
@@ -16,6 +24,7 @@ header {
     padding: 20px;
 }
 
+/* Coloring neon text - title */
 .neonText {
     color: #F7E9FF;
     text-shadow:
@@ -28,33 +37,23 @@ header {
         0 0 92px #F7E9FF,
         0 0 102px #F7E9FF,
         0 0 151px #3E3ECC;
-  }
+}
   
-  /* Additional styling */
-    
-  body {
-    font-size: 18px;
-    font-family: "Vibur", sans-serif;
-  }  
-  
+/* Styling neon text - title */
   h1 {
+    font-size: 3.5rem;
+    font-family: "Vibur", sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
-  }
-    
-  h1 {
-      font-size: 3.5rem;
-  }
-  
-  .container {
-    margin-top: 20vh;
-  }
+}
 
-  .pulsate {
+/* Animating text - title */
+.pulsate {
     animation: pulsate 1.5s infinite alternate;     
 }
 
+/* Coloring animation - title */
 @keyframes pulsate {
     
     100% {
@@ -86,52 +85,24 @@ header {
   }
 }
 
+/* Resizing nav menu */
 header nav {
     padding-left: 10px;
-    font-size: 20px;
 }
 
+/* styling nav menu */
 nav ul {
     list-style-type: none;
     display: flex;
 }
 
+/* styling nav buttons */
 ul li {
     margin-left: 10px;
     font-size: 25px;
 }
 
-main {
-    height: 400px;
-}
-
-article {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-article div p {
-    width: 1000px;
-}
-
-.title {
-    display: flex;
-    justify-content: right;
-    width: 250px;
-    padding-right: 10px;
-    border-right: 2.5px solid;
-    font-size: 25px;
-}
-
-.info {
-    padding-left: 10px;
-}
-
-.container {
-    padding-top: 200px;
-}
-
+/* Creating border for navigation bar */
 nav li {
     border: 0.2rem solid #fff;
     border-radius: 2rem;
@@ -142,13 +113,62 @@ nav li {
                 0 0 0.8rem #bc13fe,
                 0 0 2.8rem #bc13fe,
                 inset 0 0 1.3rem #bc13fe;
-  }
+}
 
-  a {
-      text-decoration: none;
-      color: inherit;
-  }
+/* Removing style from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-  html {
-      scroll-behavior: smooth;
-  }
+/* yet to be defined */
+main {
+    height: 400px;
+}
+
+/* Resizing container */
+.container {
+    padding-top: 200px;
+    margin-left: 200px;
+}
+
+/* Positioning articles */
+article {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+/* Styling and positioning articles titles */
+.title {
+    display: flex;
+    justify-content: right;
+    width: 250px;
+    padding-right: 10px;
+    border-right: 2.5px solid;
+    font-size: 25px;
+}
+
+/* Styling About Me Section */
+.info {
+    padding-left: 10px;
+    /* background-color: red; */
+    width: 800px;
+}
+
+/* Resizing images */
+.info img {
+    display: flex;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+}
+
+/* Resizing first image */
+.info img:first-of-type {
+    max-width:630px;
+    max-height:695px;
+    width: auto;
+    height: auto;
+}
