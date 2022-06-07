@@ -91,7 +91,7 @@ header nav {
 }
 
 /* styling nav menu */
-nav ul {
+ul {
     list-style-type: none;
     display: flex;
 }
@@ -129,7 +129,7 @@ main {
 /* Resizing container */
 .container {
     padding-top: 200px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 /* Positioning articles */
@@ -149,26 +149,62 @@ article {
     font-size: 25px;
 }
 
-/* Styling About Me Section */
+/* Styling info Section */
 .info {
     padding-left: 10px;
-    /* background-color: red; */
-    width: 800px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Resizing images */
 .info img {
-    display: flex;
-    max-width:230px;
-    max-height:95px;
-    width: auto;
-    height: auto;
+    width: 390px;
+    height: 219px;
+    margin: 10px;
 }
 
 /* Resizing first image */
-.info img:first-of-type {
-    max-width:630px;
-    max-height:695px;
-    width: auto;
-    height: auto;
+.info div:first-child img {
+    width: 800px;
+    height: 450px;
+    margin: 10px;
+}
+
+/* Creating image border */
+img {
+    background: linear-gradient(to right, #7171FF, #bc13fe);
+    padding: 0.4rem;
+}
+
+/* Styling hover on images */
+.info img:hover {
+    border: blue solid;
+}
+
+/* Resizing contact info */
+.contact-info {
+    padding-left: 10px;
+    width: 800px;
+}
+
+/* Styling contact info */
+.contact-info ul{
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+/* Styling contact info items */
+.contact-info ul li{
+    align-self: center;
+    border-bottom: 2.5px solid;
+}
+
+/* Styling title images */
+h3 {
+    position: relative;
+    left: 3%;
+    bottom: 50px;
+    background: linear-gradient(to right, #7171FF, #bc13fe);
+    width: 110px;
 }
